@@ -1,0 +1,19 @@
+package date;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Date03 {
+	public static void main(String[] args) {
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS");//年月日时分秒毫秒
+		String str = sdf.format(d);
+		System.out.println(str);
+		
+		Date d1 = new Date();
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		String str1 = sdf.format(d1);
+		System.out.println(str1);
+	}
+
+}

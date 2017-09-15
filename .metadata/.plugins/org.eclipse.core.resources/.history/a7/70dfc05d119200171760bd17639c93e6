@@ -1,0 +1,20 @@
+package classic50;
+
+import java.util.Scanner;
+
+/**
+ * 输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数。
+ * @author zjz
+ *
+ */
+public class Test07 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		int adcCount=0;
+		int sapceCount=0;
+		int numCount=0;
+		int otherCount=0;
+		char[] ch = str.toCharArray();
+	}
+}

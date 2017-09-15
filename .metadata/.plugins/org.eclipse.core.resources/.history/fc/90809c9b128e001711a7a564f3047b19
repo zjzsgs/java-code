@@ -1,0 +1,13 @@
+package date;
+
+import java.util.Date;
+
+public class Date01 {
+	public static void main(String[] args) {
+		Date d1 = new Date();//直接得到的日期 可读性较差 
+		System.out.println(d1);//Thu Aug 31 14:04:10 CST 2017
+		Date d2 = new Date(5000);//5秒之后
+		System.out.println(d2);//Thu Jan 01 08:00:05 CST 1970
+	}
+
+}

@@ -1,0 +1,30 @@
+package date;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Date04 {
+
+	public static void main(String[] args) {
+		int yearStart = 1970;
+		int yearEnd = 2000;
+		Date[] ds = new Date[9];
+		for (int i = 0; i < ds.length; i++) {
+			ds[i] = getRandomDate(yearStart,yearEnd);
+		}
+		
+	}
+
+	private static Date getRandomDate(int yearStart, int yearEnd) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+		try {
+			Date dStart = sdf.parse(String.valueOf(yearStart));
+			Date dEnd = sdf.parse(String.valueOf(yearEnd+1));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

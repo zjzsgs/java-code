@@ -1,0 +1,19 @@
+package date;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+/**
+ * 翻日历
+ * @author zjz
+ *
+ */
+public class Date05 {
+	private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM--dd HH:mm:ss");
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance();
+		Date now  = c.getTime();
+		System.out.println("当前是时间为：\t"+format(c.getTime()));
+	}
+}

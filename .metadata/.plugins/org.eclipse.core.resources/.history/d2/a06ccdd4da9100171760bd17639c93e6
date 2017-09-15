@@ -1,0 +1,11 @@
+package classic50;
+
+/**
+ * 每对兔子从出生第三个月后不停生一对兔子
+ * 规律：1、1、2、3、5、8
+ * @author zjz
+ *
+ */
+public class Test01 {
+
+}

@@ -1,0 +1,36 @@
+package date;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Date03 {
+	public static void main(String[] args) {
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS");//年月日时分秒毫秒
+		String str = sdf.format(d);
+		System.out.println(str);
+		
+//		字符转日期
+		String str4 = "2020-12-21 12:12:23 324";
+		try {
+			Date d4 = sdf.parse(str4);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Date d1 = new Date();
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		String str1 = sdf1.format(d1);
+		System.out.println(str1);
+		
+		Date d2 = new Date();//Date()空表示当前时间
+		Date d3 = new Date(System.currentTimeMillis());//Date()有毫秒数 表示距19700101 08 间隔的毫秒数
+		System.out.println(d3.getTime()-d2.getTime());
+		SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");
+		String str2 = sdf2.format(d2);
+		System.out.println(str2);
+	}
+
+}

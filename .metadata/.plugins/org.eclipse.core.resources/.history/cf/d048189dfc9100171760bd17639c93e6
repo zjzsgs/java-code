@@ -1,0 +1,10 @@
+package classic50;
+/**
+ * 打印水仙花数
+ * 153=1^3+5^3+3^3
+ * @author zjz
+ *
+ */
+public class Test03 {
+
+}

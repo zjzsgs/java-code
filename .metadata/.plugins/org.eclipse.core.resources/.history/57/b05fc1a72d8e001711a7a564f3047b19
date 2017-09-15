@@ -1,0 +1,27 @@
+package pojo;
+
+public class Hero implements Comparable<Hero>{
+
+	private String name;
+	private float hp;
+	private int damage;
+	
+	public Hero(){}
+	public Hero(String name){this.name = name;}
+	public Hero(String name,float hp,int damage){this.name=name;this.hp=hp;this.damage=damage;}
+	
+	public int compareTo(Hero shero) {
+		if(damage<shero.damage){
+			return 1;
+		}else{
+			return -1;
+		}
+	}
+	
+	@Override
+	public String toString(){
+		return "Hero [name="+name+",hp="+hp+",damage="+damage+"]\r\n";
+	}
+	
+	
+}

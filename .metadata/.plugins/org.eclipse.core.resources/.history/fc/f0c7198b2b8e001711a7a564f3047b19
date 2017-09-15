@@ -1,0 +1,12 @@
+package pojo;
+
+public class Hero implements Comparable<Hero>{
+
+	private String name;
+	private float hp;
+	public int compareTo(Hero arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

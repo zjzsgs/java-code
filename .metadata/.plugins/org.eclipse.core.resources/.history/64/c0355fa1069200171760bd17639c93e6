@@ -1,0 +1,10 @@
+package classic50;
+
+/**
+ * 分解质因数 90=2*3*5
+ * @author zjz
+ *
+ */
+public interface Test04 {
+	
+}
